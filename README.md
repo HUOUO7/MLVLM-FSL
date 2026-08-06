@@ -14,7 +14,7 @@ The experiments utilize 13 datasets from ELEVATER for instruction tuning and 8 e
 * **Training Sets**: Covers scene recognition, general object recognition, remote sensing, and fine-grained classification.
 * **Test Sets**: MiniImageNet (MINI), CIFAR-FS, Tiered-ImageNet, CUB, Stanford Dogs, FGVC-Aircraft, Oxford Flowers, and Stanford Cars.
 
-## Environment Preparation
+## 🛠️ Environment Preparation
 Please configure the runtime environment following the instructions provided by the official [QwenLM/Qwen-VL](https://github.com/QwenLM/Qwen-VL) repository.
 
 ## 🚀 Step-by-Step Guide
