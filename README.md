@@ -25,12 +25,12 @@ Generate the N-way K-shot instruction-following data for Qwen-VL.
 Perform QLoRA fine-tuning on the Qwen-VL-Chat-Int4 model.
 * **Script**: `finetune_qlora_ds_cww.sh`
 * **Key Components**: Uses **Label Augmentation (LA)** via character perturbation (e.g., Shuffle, Reversed, Random Insert) to break common token sequences.
-* We provide our fine‑tuned LoRA checkpoint (checkpoint‑4500) available at https://www.modelscope.cn/models/yiyigo/Qwen‑VL‑Chat‑Int4‑Qlora.
+* We provide our fine‑tuned LoRA checkpoint (checkpoint‑4500) available at [https://www.modelscope.cn/models/yiyigo/Qwen‑VL‑Chat‑Int4‑Qlora](https://www.modelscope.cn/models/yiyigo/Qwen-VL-Chat-Int4-Qlora).
   
 ### Step 3: Inference & Evaluation
 Test the fine-tuned model's performance.
 * **Folder**: `Test_Qwen_scripts/`
-* **Action**: Execute eva_ele_vanilia_3500_infer_fsl4_test_no_history.sh for fine‑tuned models, remember to replace the model weights with your fine‑tuned LoRA checkpoint before running inference.
+* **Action**: Execute `eva_ele_vanilia_3500_infer_fsl4_test_no_history.sh` for fine‑tuned models, remember to replace the model weights with your fine‑tuned LoRA checkpoint before running inference.
 * **Metric Calculation**: Use `cal_for_Qwen_using_CLIP.py` to calculate `Acc`, `Acc_occur`, and `Acc_clip`.
 
 ### Step 4: Attribute Description Generation
