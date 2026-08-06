@@ -30,7 +30,7 @@ Perform QLoRA fine-tuning on the Qwen-VL-Chat-Int4 model.
 ### Step 3: Inference & Evaluation
 Test the fine-tuned model's performance.
 * **Folder**: `Test_Qwen_scripts/`
-* **Action**: Execute `eva_ele_vanilia_3500_infer_fsl4_test_no_history.sh` for fine-tuned models.
+* **Action**: Execute eva_ele_vanilia_3500_infer_fsl4_test_no_history.sh for fine‑tuned models, remember to replace the model weights with your fine‑tuned LoRA checkpoint before running inference.
 * **Metric Calculation**: Use `cal_for_Qwen_using_CLIP.py` to calculate `Acc`, `Acc_occur`, and `Acc_clip`.
 
 ### Step 4: Attribute Description Generation
@@ -46,14 +46,6 @@ Simplify the classification task by filtering candidates based on semantic simil
 
 ## 📊 Performance
 Our method achieves State-of-the-Art performance on both general and fine-grained FSC benchmarks.
-
-| Dataset | Ours (5-way 1-shot) | Gain over SOTA |
-| :--- | :---: | :---: |
-| MiniImageNet | **98.24%** | +2.02% |
-| CIFAR-FS | **95.02%** | +5.08% |
-| CUB | **96.40%** | +0.60% |
-| Oxford Flowers | **99.58%** | +16.33% |
-| Stanford Cars | **99.72%** | +11.02% |
 <img width="858" height="237" alt="image" src="https://github.com/user-attachments/assets/c3ff249c-b4fd-4651-9460-42f4236f4ad7" />
 
 
