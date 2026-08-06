@@ -20,13 +20,13 @@ The experiments utilize 13 datasets from ELEVATER for instruction tuning and 8 e
 Generate the N-way K-shot instruction-following data for Qwen-VL.
 * **Folder**: `build_data_instruction/`
 * **Core Script**: `sample_base_novel_ele_qwen.py` (Converts datasets into the required format where query samples are aligned with candidate answers).
-* We provide our fine‑tuned LoRA checkpoint (checkpoint‑4500) available at https://www.modelscope.cn/models/yiyigo/Qwen‑VL‑Chat‑Int4‑Qlora.
 
 ### Step 2: Instruction Fine-tuning
 Perform QLoRA fine-tuning on the Qwen-VL-Chat-Int4 model.
 * **Script**: `finetune_qlora_ds_cww.sh`
 * **Key Components**: Uses **Label Augmentation (LA)** via character perturbation (e.g., Shuffle, Reversed, Random Insert) to break common token sequences.
-
+* We provide our fine‑tuned LoRA checkpoint (checkpoint‑4500) available at https://www.modelscope.cn/models/yiyigo/Qwen‑VL‑Chat‑Int4‑Qlora.
+  
 ### Step 3: Inference & Evaluation
 Test the fine-tuned model's performance.
 * **Folder**: `Test_Qwen_scripts/`
@@ -54,6 +54,9 @@ Our method achieves State-of-the-Art performance on both general and fine-graine
 | CUB | **96.40%** | +0.60% |
 | Oxford Flowers | **99.58%** | +16.33% |
 | Stanford Cars | **99.72%** | +11.02% |
+<img width="858" height="237" alt="image" src="https://github.com/user-attachments/assets/c3ff249c-b4fd-4651-9460-42f4236f4ad7" />
+
+
 
 ## ✒️ Citation
 ```bibtex
