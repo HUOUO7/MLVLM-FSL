@@ -20,7 +20,7 @@ The experiments utilize 13 datasets from ELEVATER for instruction tuning and 8 e
 Generate the N-way K-shot instruction-following data for Qwen-VL.
 * **Folder**: `build_data_instruction/`
 * **Core Script**: `sample_base_novel_ele_qwen.py` (Converts datasets into the required format where query samples are aligned with candidate answers).
-We provide our fine‑tuned LoRA checkpoint (checkpoint‑4500) available at https://www.modelscope.cn/models/yiyigo/Qwen‑VL‑Chat‑Int4‑Qlora.
+* We provide our fine‑tuned LoRA checkpoint (checkpoint‑4500) available at https://www.modelscope.cn/models/yiyigo/Qwen‑VL‑Chat‑Int4‑Qlora.
 
 ### Step 2: Instruction Fine-tuning
 Perform QLoRA fine-tuning on the Qwen-VL-Chat-Int4 model.
